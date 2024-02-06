@@ -1,0 +1,23 @@
+name: Python package
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+    steps:
+      # Клонируем проект
+      - uses: actions/checkout@v4
+
+      # Устанавливает Питон нужной версии
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      # Запускаем тесты.
+      - name: Tests
+        run: python -m unittest discover -s tests -v
