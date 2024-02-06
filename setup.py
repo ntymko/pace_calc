@@ -7,14 +7,14 @@ def readme():
 
 
 setup(
-  name='pacecalc',
+  name='pace_calc',
   version='1.0.0',
   author='ntymko',
   author_email='ndilkova28@gmail.com',
   description='Библиотека для расчета темпа бега, скорости и времени',
   long_description=readme(),
   long_description_content_type='text/markdown',
-  url= {'GitHub': 'https://github.com/ntymko/pace_calc'},
+  url='https://github.com/ntymko/pace_calc',
   packages=find_packages(),
   install_requires=[],
   classifiers=[
