@@ -1,3 +1,5 @@
 .idea/
 build
 dist
+pacecalc.egg-info
+pace_calc.egg-info
